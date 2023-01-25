@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var username = "Default Person"
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Spacer()
+            Image(systemName: "person.fill")
+            Text("\(username)")
+            Spacer()
+            Text("Start game")
+            Text("Rules")
+            Text("Records")
+            Spacer()
         }
         .padding()
     }
