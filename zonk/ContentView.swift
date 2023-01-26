@@ -2,30 +2,35 @@
 //  ContentView.swift
 //  zonk
 //
-//  Created by Никита Тихонюк on 25.01.2023.
+//  Created by Nikita Tikhonyuk on 25.01.2023.
 //
 
 import SwiftUI
 
+//Main screen
 struct ContentView: View {
     
     @State private var username = "Default Person"
     
     var body: some View {
-        VStack {
-            Spacer()
-            Image(systemName: "person.fill")
-            Text("\(username)")
-            Spacer()
-            Text("Start game")
-            Text("Rules")
-            Text("Records")
-            Spacer()
+        
+        NavigationView {
+            VStack {
+                NavigationLink(destination: GameScreenView()) {
+                    Text("Start game")
+                }
+                
+                NavigationLink(destination: ModalRulesView()) {
+                    Text("Rules")
+                }
+            }
+            
         }
-        .padding()
+        
     }
 }
 
+//Preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

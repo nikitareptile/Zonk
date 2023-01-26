@@ -11,6 +11,8 @@
 		FD2616E729816650000AE01E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2616E629816650000AE01E /* ContentView.swift */; };
 		FD2616E929816651000AE01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2616E829816651000AE01E /* Assets.xcassets */; };
 		FD2616EC29816651000AE01E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2616EB29816651000AE01E /* Preview Assets.xcassets */; };
+		FD790D332982B5CE00D2F79C /* GameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD790D322982B5CE00D2F79C /* GameScreenView.swift */; };
+		FD790D352982B61B00D2F79C /* ModalRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD790D342982B61B00D2F79C /* ModalRulesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		FD2616E629816650000AE01E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD2616E829816651000AE01E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD2616EB29816651000AE01E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD790D322982B5CE00D2F79C /* GameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenView.swift; sourceTree = "<group>"; };
+		FD790D342982B61B00D2F79C /* ModalRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRulesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				FD2616E429816650000AE01E /* zonkApp.swift */,
 				FD2616E629816650000AE01E /* ContentView.swift */,
+				FD790D322982B5CE00D2F79C /* GameScreenView.swift */,
+				FD790D342982B61B00D2F79C /* ModalRulesView.swift */,
 				FD2616E829816651000AE01E /* Assets.xcassets */,
 				FD2616EA29816651000AE01E /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				FD2616E729816650000AE01E /* ContentView.swift in Sources */,
 				FD2616E529816650000AE01E /* zonkApp.swift in Sources */,
+				FD790D352982B61B00D2F79C /* ModalRulesView.swift in Sources */,
+				FD790D332982B5CE00D2F79C /* GameScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
