@@ -12,16 +12,23 @@ struct GameScreenView: View {
     
     var body: some View {
         VStack {
-            Text("This is game screen")
-            
-            Button(action: {
-                showModalRules.toggle()
-            }, label: {
-                Text("Rules")
-            })
-            .sheet(isPresented: $showModalRules) {
-                ModalRulesView()
+            HStack {
+                Button(action: {
+                    showModalRules.toggle()
+                }, label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.gray)
+                            .frame(width: 88.0, height: 42.0)
+                        Text("Rules")
+                            .foregroundColor(.white)
+                    }
+                })
+                .sheet(isPresented: $showModalRules) {
+                    ModalRulesView()
+                }
             }
+            Spacer()
         }
     }
 }

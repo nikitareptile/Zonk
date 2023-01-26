@@ -16,17 +16,42 @@ struct ContentView: View {
         
         NavigationView {
             VStack {
+                Spacer()
+                VStack {
+                    Text("Zonk")
+                        .font(.largeTitle)
+                    .fontWeight(.black)
+                    Text("Dice game")
+                }
+                Spacer()
                 NavigationLink(destination: GameScreenView()) {
-                    Text("Start game")
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.black)
+                            .frame(width: 240.0, height: 68.0)
+                        
+                        Text("Start game")
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .foregroundColor(.white)
+                    }
                 }
-                
                 NavigationLink(destination: ModalRulesView()) {
-                    Text("Rules")
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.black)
+                            .frame(width: 240.0, height: 68.0)
+                        
+                        Text("Rules")
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .foregroundColor(.white)
+                    }
                 }
+                Spacer()
             }
             
         }
-        
     }
 }
 
