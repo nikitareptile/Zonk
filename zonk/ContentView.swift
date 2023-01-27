@@ -20,32 +20,32 @@ struct ContentView: View {
                 VStack {
                     Text("Zonk")
                         .font(.largeTitle)
-                    .fontWeight(.black)
+                        .fontWeight(.black)
                     Text("Dice game")
                 }
                 Spacer()
                 NavigationLink(destination: GameScreenView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
-                            .foregroundColor(.black)
+                            .foregroundColor(Color.primary)
                             .frame(width: 240.0, height: 68.0)
                         
                         Text("Start game")
                             .font(.title)
                             .fontWeight(.medium)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("AdaptiveColor"))
                     }
                 }
                 NavigationLink(destination: ModalRulesView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
-                            .foregroundColor(.black)
+                            .foregroundColor(Color.primary)
                             .frame(width: 240.0, height: 68.0)
                         
                         Text("Rules")
                             .font(.title)
                             .fontWeight(.medium)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("AdaptiveColor"))
                     }
                 }
                 Spacer()
