@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ModalRulesView: View {
     var body: some View {
-        Text("Game rules")
+        VStack {
+            Text("Game rules")
+                .font(.largeTitle)
+            .fontWeight(.black)
+            Spacer()
+            List {
+                Text("Shake the cup")
+                Text("Watch for combinations")
+                Text("Save your dices or reshake the cup")
+            }
+        }
+        
     }
 }
 
